@@ -1,0 +1,43 @@
+ [{
+     "name": "Pepsi",
+     "id": 1,
+     "img": "/assets/img/pepsi.png",
+     "description": "Original taste",
+     "price": 18
+   },
+   {
+     "name": "Fanta",
+     "id": 2,
+     "img": "/assets/img/fanta.png",
+     "description": "Fresh orange",
+     "price": 18
+   },
+   {
+     "name": "Sprite",
+     "id": 3,
+     "img": "/assets/img/sprite.png",
+     "description": "Lemon fresh for you",
+     "price": 18
+   },
+   {
+     "name": "Mirinda",
+     "id": 4,
+     "img": "/assets/img/mirinda.png",
+     "description": "Power of orange",
+     "price": 17
+   },
+   {
+     "name": "Mirinda Blueberry",
+     "id": 5,
+     "img": "/assets/img/mirinda-blueberry.jpeg",
+     "description": "New blueberry taste",
+     "price": 17
+   },
+   {
+     "name": "Mirinda Strawberry",
+     "id": 6,
+     "img": "/assets/img/mirinda-strawberry.jpg",
+     "description": "New strawberry taste",
+     "price": 17
+   }
+ ]

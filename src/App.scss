@@ -1,0 +1,26 @@
+$main-color: #98ccfd;
+
+.header {
+  background: $main-color;
+}
+
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Roboto;
+}
+
+img {
+  max-width: 100%;
+}
+
+.product {
+  &__info {
+    background: $main-color;
+  }
+}
+
+.summary {
+  background: $main-color;
+}

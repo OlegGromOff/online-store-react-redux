@@ -1,0 +1,38 @@
+.add-form {
+  margin: 0 auto;
+  max-width: 320px;
+  text-align: center;
+
+  &__input {
+    display: block;
+    margin: 20px auto;
+    width: 320px;
+    max-width: 100%;
+    border: 2px solid #2d67ab;
+  }
+
+  &__btn {
+    border: 1px solid #2d67ab;
+    background: #2d67ab;
+    color: #fff;
+    padding: 5px 10px;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 1px rgba(242, 242, 242, 0.5),
+        0 0 0 1px rgba(242, 242, 242, 0.5);
+    }
+  }
+}
+
+.title {
+  text-align: center;
+}
+
+
+
+@media screen and(max-width:640px) {
+  .title {
+    font-size: 26px;
+  }
+}
