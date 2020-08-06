@@ -4,7 +4,7 @@ import './index.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { createStore } from 'redux';
-import { Provider } from 'react-redux';
+import { Provider } from 'react-redux'; // обертка чтобы прокинуть store ниже в глубь, чтобы использовать его во всем приложении
 import { rootReducer } from './store/reducers';
 
 export const DELETE_PRODUCT = 'DELETE_PRODUCT'; //создал переменную action со строковым значением

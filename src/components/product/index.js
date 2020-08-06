@@ -2,14 +2,15 @@ import React from 'react';
 import './style.scss';
 import HighlightOffIcon from '@material-ui/icons/HighlightOff';
 
-
-const Product = ({ item, name, description, img, deleteFunc, id, price }) => {
+const Product = ({ catalog, item, name, description, img, deleteProductAction, id, price }) => { // пропсы которые я передал через mapStateToProps и mapDispatchToProps
 
   return (
     <div className="product-wrap col-12 col-md-6 col-xl-4">
       <div className="product">
         <div className="delete-btn">
-          <HighlightOffIcon onClick={() => deleteFunc(id)} />
+          <HighlightOffIcon onClick={() =>
+            deleteProductAction(id)
+          } />
         </div>
         <div className="product__img">
           <img src={img} alt="bottle" />
@@ -23,4 +24,5 @@ const Product = ({ item, name, description, img, deleteFunc, id, price }) => {
     </div>
   )
 }
+
 export default Product;

@@ -16,8 +16,8 @@ const Header = () => {
       <menu className={!menuToggle ? "menu-default" : "active-menu"}>
         <div className="container">
           <div className="menu-header">
-            <p><Link exact to="/" className="menu__link">Catalog</Link></p>
-            <p><Link exact to="/new-products" className="menu__link">New product page</Link></p>
+            <p><Link to="/" className="menu__link">Catalog</Link></p>
+            <p><Link to="/new-products" className="menu__link">New product page</Link></p>
           </div>
         </div>
       </menu>

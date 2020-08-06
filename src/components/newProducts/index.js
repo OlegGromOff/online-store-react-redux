@@ -3,6 +3,23 @@ import './style.scss';
 
 const NewProducts = () => {
 
+  const onSubmit = (e) => {
+    e.preventDefault();
+    const name = '';
+    const id = '';
+    const img = '';
+    const description = '';
+    const price = '';
+    const product = {
+      name,
+      id,
+      img,
+      description,
+      price
+    }
+    localStorage.setItem()
+  }
+
   // const addProductFunc = (e) => {
   //   e.preventDefault();
   //   let obj = {
@@ -21,7 +38,7 @@ const NewProducts = () => {
   return (
     <div className="container">
       <h2 className="title">Let`s add new product</h2>
-      <form className="add-form" onSubmit={addProductFunc}>
+      <form className="add-form" onSubmit={onSubmit}>
         <input type="text" className="add-form__input" placeholder="Product name" />
         <input type="text" className="add-form__input" placeholder="Product price" />
         <input type="text" className="add-form__input" placeholder="Product description" />
