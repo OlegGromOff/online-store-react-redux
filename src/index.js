@@ -9,7 +9,7 @@ import { rootReducer } from './store/reducers';
 
 export const DELETE_PRODUCT = 'DELETE_PRODUCT'; //создал переменную action со строковым значением
 export const DELETE_ALL = 'DELETE_ALL'; //создал переменную action со строковым значением
-
+export const ADD_PRODUCT = 'ADD_PRODUCT';
 const store = createStore(rootReducer);
 
 ReactDOM.render(
