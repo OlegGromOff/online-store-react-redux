@@ -5,7 +5,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
 import { Link } from 'react-router-dom';
 
-const Header = () => {
+const Header = ({ role }) => {
   const menuState = false;
   const [menuToggle, setMenuToggle] = useState(menuState);
   const menuOpen = () => {
@@ -33,4 +33,6 @@ const Header = () => {
 
   )
 }
+
 export default Header;
+// export default Header;

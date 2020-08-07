@@ -26,8 +26,6 @@ const Products = ({ catalog, deleteProductAction }) => {
   )
 }
 
-
-
 const mapStateToProps = (state) => {
   return {
     catalog: state.catalogArray

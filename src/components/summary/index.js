@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import * as actions from '../../store/actions'; //импортировал action creators  и назвал их actions
 import { bindActionCreators } from 'redux';
 
-const Summary = ({ catalog, deleteAllAction }) => {
+const Summary = ({ catalog, deleteAllAction, role }) => {
 
   const prices = catalog.map((item) => item.price);  //создал массив цен
   const summaryPrices = prices.reduce((sum, current) => sum + current, 0); // вычислил сумму всех цен
@@ -18,17 +18,18 @@ const Summary = ({ catalog, deleteAllAction }) => {
         <p className="summary__products">Total number of goods: {catalog.length}</p>
         <p className="summary__prices">Sum of prices: {summaryPrices} ₴</p>
         <p className="summary__average-price">Average price: {averagePrice > 0 ? averagePrice : 0} ₴</p>
-        <button className="summary__delete-products" onClick={() => deleteAllAction()}>Delete all products</button>
+        {role === 'admin' ?
+          <button className="summary__delete-products" onClick={() => deleteAllAction()}>Delete all products</button>
+          : null}
       </div>
     </div>
   )
 }
 
-
-
 const mapStateToProps = (state) => {
   return {
-    catalog: state.catalogArray
+    catalog: state.catalogArray,
+    role: state.userRole
     // записываем сюда данные из стейта которые хотим использовать
   }
 }
